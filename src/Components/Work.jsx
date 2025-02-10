@@ -10,11 +10,11 @@ const Work = () => {
         {url:"https://assets-global.website-files.com/6334198f239547d0f9cd84b3/634ef0af108a465002975acd_Showcase%20Websites%20(1).png",top:"65%",left:"55% ",isActive:false}
     ]
   return ( 
-    <div className='w-full'>
+    <div className='w-full mt-10'>
         <div className='relative max-w-screen-xl mx-auto text-center' >
             <h1 className='text-[30vw] leading-none font-medium select-none tracking-tight'>Work</h1>
         </div>
-        <div>
+        <div className='absolute top-0 w-full h-full'>
             {images.map((elem,index) =>
             elem.isActive && (
                 <img className='absolute w-60 rounded-lg -translate-x-[50%] -translate-y-[50%]' src={elem.url} style={{top:elem.top,left:elem.left}} alt="" />
