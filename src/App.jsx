@@ -1,7 +1,7 @@
 import NavBar from "./Components/NavBar"
 
 function App() {
-  return <div className='w-full h-screen bg-gray-900 text-white'>
+  return <div className='w-full h-screen  bg-gray-900 font-["satoshi"] text-white'>
     <NavBar />
   </div>
 }

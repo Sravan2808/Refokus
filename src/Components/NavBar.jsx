@@ -8,7 +8,11 @@ const NavBar = () => {
         alt="refokus-logo"
       />
       <div className="links flex gap-14 ml-20">
-        {["Home", "Work", "Culture"].map((elem,index) => (
+        {["Home", "Work", "Culture","","News"].map((elem,index) => 
+        elem.length === 0 ?(
+          <span className="w-[1px] h-7 bg-zinc-700"></span>  
+        ):
+        (
           <a
             href="#"
             className="font-regular flex text-sm items-center gap-1 cursor-pointer"
