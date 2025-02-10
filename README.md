@@ -12,3 +12,6 @@ Currently, two official plugins are available:
  - Created a NavBar
   - Refokus logo ,add links =>  Home  Work Culture
   - Box shadowed the green dot before Work
+  - Created straight line between culture and news
+  - created Button Component
+  
