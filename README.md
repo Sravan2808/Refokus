@@ -14,4 +14,14 @@ Currently, two official plugins are available:
   - Box shadowed the green dot before Work
   - Created straight line between culture and news
   - created Button Component
+
+
+
+
+  - smoothness handle - locomotive  js - beta
+  - animation of work component
+  - using frame motion scroll
+  - value 25 - first image
+  - value 50 - second image
+
   
