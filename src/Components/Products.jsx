@@ -122,8 +122,8 @@ const Products = () => {
       url: "https://cdn.refokus.com/website/2022/videos/weglotlikemagic.webm",
       color: "bg-red-200",
       bgimage:
-      "https://assets-global.website-files.com/6334198f239547f2fccd84c1/637e6790db842e13a0e0aa51_Work-Background-p-2000.png",
-     },
+        "https://assets-global.website-files.com/6334198f239547f2fccd84c1/637e6790db842e13a0e0aa51_Work-Background-p-2000.png",
+    },
     {
       title: "Rocket",
       description:
@@ -133,7 +133,7 @@ const Products = () => {
       url: "https://cdn.refokus.com/website/2022/videos/rocketchat.webm",
       bgimage:
         "https://assets-global.website-files.com/6334198f239547f2fccd84c1/635299c0532977f3221f06f5_Summon%20bg-p-2000.png",
-     },
+    },
     {
       title: "Showcase",
       description:
@@ -160,32 +160,22 @@ const Products = () => {
       ))}
 
       <div className="w-full h-full absolute pointer-events-none top-0">
-      <motion.div
+        <motion.div
           initial={{ y: pos, x: "-50%" }}
           animate={{ y: pos + "rem" }}
           transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
           className="absolute w-[32rem] h-[23rem] bg-white left-[44%] overflow-hidden"
         >
-          <motion.div
-            animate={{ y: -pos + "rem" }}
-            className="w-full h-full bg-sky-200"
-            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
-          ></motion.div>
-          <motion.div
-            animate={{ y: -pos + "rem" }}
-            className="w-full h-full bg-sky-300"
-            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
-          ></motion.div>
-          <motion.div
-            animate={{ y: -pos + "rem" }}
-            className="w-full h-full bg-sky-400"
-            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
-          ></motion.div>
-          <motion.div
-            animate={{ y: -pos + "rem" }}
-            className="w-full h-full bg-sky-500"
-            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
-          ></motion.div>
+          {products.map((items, index) => (
+            <motion.div
+              key={index}
+              animate={{ y: -pos + `rem` }}
+              transition={{ ease: [0.25, 1, 0.5, 1], duration: 0.4 }}
+              className="w-full h-full rounded-xl overflow-hidden"
+            >
+              <video src={items.url} autoPlay muted loop></video>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </div>
